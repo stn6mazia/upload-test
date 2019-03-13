@@ -1,0 +1,28 @@
+@import '../../../shared/scss/common_colors';
+
+#box {
+    border: 1px black solid;
+    text-align: center;
+    min-height: 60vh;
+    margin-top: 3rem;
+}
+
+.product-box {
+    background-color: $default-yellow;
+    box-shadow: 10px 5px 5px black;
+}
+
+.filial-box {
+    background-color: $default-blue;
+    box-shadow: 10px 5px 5px black;
+}
+
+.info-sect {
+    padding-top: 5rem;
+
+}
+
+.upload-sect {
+    padding-top: 10%;
+    padding-bottom: 2rem;
+}

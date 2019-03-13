@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.afu-select-btn {
+    background-color: rgb(125, 8, 172);
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.afu-upload-btn {
+    display: none;
+}
+
+.afu-upload-btn:disabled {
+    background-color: rgb(173, 173, 173);
+    color: rgb(59, 59, 59);
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.afu-dragndrop-box {
+    width: 100%;
+}
+
+.afu-valid-file {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    p {
+        flex: 0 0 40%;
+        width: 40%;
+    }
+}
+
+.afu-invalid-file {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    p {
+        flex: 0 0 40%;
+        width: 40%;
+    }
+}

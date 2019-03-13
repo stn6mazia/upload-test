@@ -1,0 +1,12 @@
+<div id="box" [ngClass]="{'filial-box' : boxName === 'FILIAL', 'product-box' : boxName === 'PRODUTO'}">
+  <div class="columns">
+    <div class="column is-12">
+      <div class="info-sect">
+        <h2>{{ boxName }}</h2>
+      </div>
+      <div class="upload-sect">
+        <app-upload-tools></app-upload-tools>
+      </div>
+    </div>
+  </div>
+</div>

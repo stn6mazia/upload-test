@@ -1,0 +1,43 @@
+#upload-sect {
+    text-align: center;
+    background-color: transparent;
+}
+
+.input-box {
+    border: 1px dashed black;
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.upload {
+    width: 100%;
+}
+
+.my-upload {
+    padding: 2rem;
+    border: 1px solid black
+}
+
+/* Esconde o input */
+input[type='file'] {
+    display: none
+}
+
+label {
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    padding: 6px 20px;
+    background-color: #3498db;
+}
+
+.upload-btn-sect {
+    padding-top: 20%;
+}
+
+.click-me {
+    cursor: pointer;
+    text-decoration: none;
+}

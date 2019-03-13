@@ -1,0 +1,41 @@
+<div id="upload-sect">
+  <div class="container">
+    <div class="row input-box">
+      <div class="col-12">
+        <div class="form-group">
+          <label for="exampleFormControlFile1">Example file input</label>
+          <input (change)="onFileSelected($event)" multiple accept=".xls, .xlt, .xlsx, .xml" type="file"
+            class="form-control-file inputfile" id="exampleFormControlFile1">
+          <div *ngFor="let file of images; let i = index">
+            <DIV class="row">
+              <DIV class="col">
+                <p class="file-info">{{ file.name }}</p>
+              </DIV>
+              <DIV class="col">
+                <p class="file-info">{{ file.type }}</p>
+              </DIV>
+              <DIV class="col">
+                <p class="file-info">{{ file.size }}</p>
+              </DIV>
+              <DIV class="col">
+                <p class="file-info">
+                  <a (click)="deletFile(file)">
+                    <i class="fas fa-times"></i>
+                  </a>
+                </p>
+              </DIV>
+            </DIV>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row upload-btn-sect">
+      <div class="col">
+        <button [disabled]="images.length == 0" class="btn btn-success" (click)="uploadBtnTemplate()">Upload</button>
+      </div>
+      <div class="col">
+        <button [disabled]="images.length == 0" class="btn btn-danger" (click)="clean()">Clean</button>
+      </div>
+    </div>
+  </div>
+</div>
